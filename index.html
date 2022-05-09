@@ -4,39 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>RocketCountdown</title>
 </head>
 <body>
-  <main>
-    <header>
+  <img class="img-top" src="./assets/top-image.svg" alt="">
+  <section>
+    <div class="main-page">
       <h1>READY TO LAUNCH IN...</h1>
-    </header>
-
-    <section>
-      <div class="countdown">
-        <p>Dias</p>
-        <h2 id="days">0</h2>
+      <div id="countdown">
+        <div id="count-timer">
+          <div class="timer">
+            <p class="info-p">Dias<p>
+            <span id="days">0</span>
+          </div>
+  
+          <div class="timer">
+            <p class="info-p">Horas<p>
+            <span id="hours">08</span>
+          </div>
+         
+  
+          <div class="timer">
+            <p class="info-p">Minutos<p>
+            <span id="minutes">08</span>
+          </div>
+  
+          <div class="timer">
+            <p class="info-p">Segundos<p>
+            <span id="seconds">08</span>
+          </div>
+        </div>
+        
+        <div class="inscreva">
+          <p class="inscre">Inscreva-se para saber mais sobre o lançamento</p>
+          <button>Inscreva-se</button>
+        </div>
       </div>
+      
 
-      <div class="countdown">
-        <p>Horas</p>
-        <h2 id="hours">0</h2>
-      </div>
+      
 
-      <div class="countdown">
-        <p>Minutos</p>
-        <h2 id="minutes">0</h2>
-      </div>
-
-      <div class="countdown">
-        <p>Segundos</p>
-        <h2 id="seconds">0</h2>
-      </div>
-    </section>
-  </main>
-
-
+    </div>
+    <img class="img-rocket" src="./assets/rocket.svg" alt="">
+  </section>
+  <img class="img-bottom"src="./assets/bottom-image.svg" alt="">
 
   <script src="./script.js"></script>
 </body>
